@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "864d1cee-9cc9-4f77-b30b-942ed00b95cc",
+		"name": "My_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23966595"
+	},
+	"item": [
+		{
+			"name": "Get Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/student/01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student",
+						"01"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Mohan\",\r\n  \"lastname\": \"Lal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"name\": \"Mohan\",\r\n    \"lastname\": \"ettan\",\r\n    \"id\": \"B9dRwuw\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/student/B9dRwuw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student",
+						"B9dRwuw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/student/Yv2c6L-",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student",
+						"Yv2c6L-"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
